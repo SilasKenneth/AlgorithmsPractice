@@ -19,9 +19,9 @@ public class Euler7 {
         return true;
     }
     private static Stream<Object> sieve(){
-        int n = 10000004;
+        int n = 100000004;
         List<Integer> primes = new ArrayList<>();
-        boolean[] isPrime = new boolean[10000005];
+        boolean[] isPrime = new boolean[100000005];
         for(int i = 2; i <= n; i++){
             if(!isPrime[i] && ( (long)i * i < n)){
                 for(int j = i * i; j  <= n; j+=i){
