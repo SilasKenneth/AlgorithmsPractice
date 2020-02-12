@@ -1,13 +1,7 @@
 package main.java.com.algorithms.practice.projecteuler;
 
 import java.math.BigInteger;
-import java.time.temporal.ChronoUnit;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Semaphore;
-import java.util.concurrent.TimeUnit;
-import java.util.stream.IntStream;
 
 public class Euler13 {
     private static BigInteger solution(){
@@ -122,7 +116,6 @@ public class Euler13 {
     private static synchronized String solver(BigInteger result){
         return result.toString().substring(0, 10);
     }
-
     public static void main(String[] args) throws InterruptedException {
         System.out.println((11|6) - 6);
         System.out.println(solver(solution()));

@@ -2,8 +2,12 @@ package main.java.com.algorithms.practice.projecteuler;
 
 import java.math.BigInteger;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.BinaryOperator;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Euler10 {
@@ -47,7 +51,14 @@ public class Euler10 {
         System.out.println(sums);
         return "";
     }
-    public static void main(String[] args) {
-        System.out.println(solution());
+
+    private static int silly(int[] A, int m){
+        int max = 1;
+        IntStream stream = Arrays.stream(A);
+        return max;
+    }
+    public static void main(String[] args) throws InterruptedException {
+//        System.out.println(solution());
+        System.out.println(silly(new int[]{1,2,3,3,3,2,1,2,3,1,4,4}, 3));
     }
 }
