@@ -15,7 +15,7 @@ public class JavaDequeue {
         for(int i = 0; i < N; i++){
             nums[i] = scanner.nextInt();
         }
-        for(int i = 1; i < N; i++){
+        for(int i = 0; i < N; i++){
             deque.add(nums[i]);
             unique.add(nums[i]);
             if(deque.size() == M){
