@@ -36,8 +36,8 @@ public final class LazyBartender {
 
     public static void main(String[] args) {
         Map<Integer, Set<Integer>> entries = new HashMap<>();
-        entries.put(0, new HashSet<>(Set.of(0, 1, 3, 6)));
-        entries.put(1, new HashSet<>(Set.of(1,4,7)));
+//        entries.put(0, new HashSet<>(Set.of(0, 1, 3, 6)));
+//        entries.put(1, new HashSet<>(Set.of(1,4,7)));
         solution(entries);
     }
 }

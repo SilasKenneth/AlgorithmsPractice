@@ -7,7 +7,7 @@ public final class CutAndPaste {
         StringBuilder ss = new StringBuilder();
         ss.append(s, 0, l+1);
         l++;
-        newS.append(s.substring(1).repeat(Integer.parseInt(""+s.charAt(l - 1))));
+//        newS.append(s.substring(1).repeat(Integer.parseInt(""+s.charAt(l - 1))));
         ss.append(newS);
 //        System.out.println(ss);
 //        System.out.println(newS);
@@ -17,7 +17,7 @@ public final class CutAndPaste {
             StringBuilder sss = new StringBuilder();
             sss.append(ss, 0, l+1);
             l++;
-            newSS.append(ss.substring(l).repeat(Integer.parseInt(""+ss.charAt(l - 1))));
+//            newSS.append(ss.substring(l).repeat(Integer.parseInt(""+ss.charAt(l - 1))));
             ss = new StringBuilder();
             ss.append(sss);
             ss.append(newSS);

@@ -1,6 +1,7 @@
 package main.java.com.algorithms.practice.projecteuler;
 
 import java.math.BigInteger;
+import java.util.Arrays;
 import java.util.List;
 
 public class Euler13 {
@@ -107,7 +108,7 @@ public class Euler13 {
                 "53503534226472524250874054075591789781264330331690";
         String[] numbers = s.split(",");
         final BigInteger[] result = {BigInteger.valueOf(0)};
-        List.of(numbers).forEach(number -> {
+        Arrays.asList(numbers).forEach(number -> {
             result[0] = result[0].add(new BigInteger(number));
         });
         return result[0];

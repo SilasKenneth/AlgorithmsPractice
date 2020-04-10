@@ -24,7 +24,7 @@ public final class StringColoringEasy {
             StringBuilder builder = new StringBuilder();
             int res = 0;
             try{
-                String s = reader.readLine().strip();
+                String s = reader.readLine().trim();
                 boolean seen = false;
                 boolean negative = false;
                 for(Character c: s.toCharArray()){

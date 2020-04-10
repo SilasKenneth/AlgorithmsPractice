@@ -89,6 +89,6 @@ public class JavaPriorityQueue {
                 "ENTER Dan 3.95 50",
                 "SERVED"
         };
-        solution(List.of(events), priorities);
+//        solution(List.of(events), priorities);
     }
 }
